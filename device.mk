@@ -329,7 +329,6 @@ PRODUCT_COPY_FILES += \
 	$(LOCAL_PATH)/rootdir/sbin/charger:$(TARGET_COPY_OUT_VENDOR)/root/sbin/charger \
 	$(LOCAL_PATH)/rootdir/sbin/setlockstate:$(TARGET_COPY_OUT_VENDOR)/root/sbin/setlockstate \
 	$(LOCAL_PATH)/rootdir/etc/mke2fs.conf:$(TARGET_COPY_OUT_VENDOR)/recovery/etc/mke2fs.conf \
-	$(LOCAL_PATH)/rootdir/etc/recovery.fstab:$(TARGET_COPY_OUT_VENDOR)/recovery/etc/recovery.fstab \
 	$(LOCAL_PATH)/rootdir/miui.factoryreset.fstab:$(TARGET_COPY_OUT_VENDOR)/recovery/miui.factoryreset.fstab \
 	$(LOCAL_PATH)/rootdir/miui.factoryreset.rc:$(TARGET_COPY_OUT_VENDOR)/recovery/miui.factoryreset.rc \
 	$(LOCAL_PATH)/rootdir/init.recovery.mt6785.rc:$(TARGET_COPY_OUT_VENDOR)/recovery/init.recovery.mt6785.rc 

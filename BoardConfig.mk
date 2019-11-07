@@ -24,20 +24,20 @@ TARGET_2ND_CPU_VARIANT := cortex-a55
 TARGET_USES_64_BIT_BINDER := true
 
 # ANT+
-BOARD_ANT_WIRELESS_DEVICE := "qualcomm-hidl"
+#BOARD_ANT_WIRELESS_DEVICE := "qualcomm-hidl"
 
 # Bootloader
-TARGET_BOOTLOADER_BOARD_NAME := sm6150
+TARGET_BOOTLOADER_BOARD_NAME := mt6785
 TARGET_NO_BOOTLOADER := true
 
 # Android Verified Boot
 BOARD_AVB_ENABLE := true
-BOARD_RECOVERYIMAGE_PARTITION_SIZE := 67108864
+BOARD_RECOVERYIMAGE_PARTITION_SIZE := 0x4000000
 BOARD_AVB_MAKE_VBMETA_IMAGE_ARGS += --set_hashtree_disabled_flag
 BOARD_AVB_MAKE_VBMETA_IMAGE_ARGS += --flags 2
 
 # Kernel
-BOARD_KERNEL_CMDLINE := console=tty0 console=ttyS0,921600n1 root=/dev/ram vmalloc=496M slub_debug=OFZPU swiotlb=noforce cgroup.memory=nosocket,nokmem firmware_class.path=/vendor/firmware page_owner=on loop.max_part=7 has_battery_removed=0 skip_initramfs ro rootwait init=/init root=PARTUUID=f54ac030-7004-4d02-9481-bbf982036807 androidboot.verifiedbootstate=orange bootopt=64S3,32N2,64N2 buildvariant=user androidboot.atm=disabled androidboot.meta_log_disable=0 androidboot.dtbo_idx=0 printk.disable_uart=1 bootprof.pl_t=1361 bootprof.lk_t=4009 bootprof.logo_t=960 boot_reason=4 androidboot.hypvm=disable androidboot.serialno=jvvombby7t7teac6 androidboot.bootreason=reboot androidboot.hwc=India androidboot.hwlevel=MP androidboot.hwversion=1.29.0 androidboot.secureboot=1 androidboot.dp=0 androidboot.chipid=0x0cc1b52e8138cecedaafa30a928c3590 androidboot.cpuid=0x0cc1b52e8138cecedaafa30a928c3590633835313237336263366262 gpt=1 usb2jtag_mode=0 mrdump_ddrsv=yes mrdump_cb=0x11e000,0x2000
+BOARD_KERNEL_CMDLINE := console=tty0 console=ttyS0,921600n1 root=/dev/ram vmalloc=496M slub_debug=OFZPU swiotlb=noforce cgroup.memory=nosocket,nokmem firmware_class.path=/vendor/firmware page_owner=on loop.max_part=7 has_battery_removed=0 skip_initramfs ro rootwait init=/init root=PARTUUID=f54ac030-7004-4d02-9481-bbf982036807 androidboot.verifiedbootstate=orange bootopt=64S3,32N2,64N2 androidboot.atm=disabled androidboot.meta_log_disable=0 androidboot.dtbo_idx=0 printk.disable_uart=1 bootprof.pl_t=1361 bootprof.lk_t=4009 bootprof.logo_t=960 boot_reason=4 androidboot.hypvm=disable androidboot.hwlevel=MP androidboot.hwversion=1.29.0  androidboot.dp=0 gpt=1 usb2jtag_mode=0 mrdump_ddrsv=yes mrdump_cb=0x11e000,0x2000
 
 BOARD_KERNEL_CMDLINE += androidboot.avb_version=1.0 androidboot.vbmeta.avb_version=1.0
 BOARD_KERNEL_CMDLINE += androidboot.selinux=permissive
